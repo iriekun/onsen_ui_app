@@ -1,0 +1,45 @@
+<ons-page ng-controller="obsSubmitController as page" id="obs_submission.html">
+    <ons-toolbar>
+        <div class="left">
+            <ons-back-button>Back</ons-back-button>
+        </div>
+        <div class="right">            
+            <ons-toolbar-button onclick="showSubmissinDialog()">Submit</ons-toolbar-button>
+        </div>
+    </ons-toolbar>
+    <ons-list>
+        <ons-list-item modifier="longdivider">
+            <ons-row style="padding-top:10px;">
+                <ons-col width="90px" onclick="showDialog('dialog-1')"> 
+                    <img src="images/location1.png" class="thumbnail" style="pointer-events: none;">         
+                </ons-col>
+                <ons-col> <textarea class="textarea" placeholder="Enter Description" style="height:80px"></textarea> </ons-col>
+                <ons-col width="15px"></ons-col>
+            </ons-row>
+        </ons-list-item>
+        <ons-list-item modifier="longdivider">
+            <div class="left">
+                <ons-icon icon="ion-clipboard" size="20px" class="list__item__icon"></ons-icon>
+            </div>
+            <div class="center">Data</div>
+        </ons-list-item>
+        <ons-list-item modifier="longdivider" tappable>
+            <div class="left">
+                <ons-icon icon="ion-location" size="20px" class="list__item__icon"></ons-icon>
+            </div>
+            <div class="center">Add Location</div>
+        </ons-list-item>
+        <ons-list-item modifier="longdivider">
+            <div class="left">
+                <ons-icon icon="ion-social-facebook" size="20px" class="list__item__icon"></ons-icon>
+            </div>
+            <div class="center">Share on Facebook</div>
+            <div class="right">
+                <ons-switch checked></ons-switch>
+            </div>
+        </ons-list-item>
+    </ons-list>      
+</ons-page>
+
+
+

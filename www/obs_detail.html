@@ -1,0 +1,52 @@
+<ons-page ng-controller="obsDetailController as page" id="obs_detail.html">
+    <ons-toolbar>
+        <div class="left">
+            <ons-back-button>Back</ons-back-button>
+        </div>
+        <div class="center">{{ myNavigator.topPage.data.title }}</div>
+    </ons-toolbar>
+    <div style=" text-align: center;width: 90%; margin:0 auto 0; background-color:white;">
+        <ons-list>
+            <ons-list-header>How is algae situation?</ons-list-header>
+            <ons-list-item  modifier="longdivider"> 
+                    <label class="left img-wrapper" for="no_algae"><img src="img/.jpg" class="obs-image"></label>
+                     <label for="no_algae" class="center label-wrapper">
+                        <p style="pointer-events: none;">  No Algae </p> 
+                        <p style="pointer-events: none;"> Eiffel Tower is the symbol of Paris and named by Gustave Eiffel <br /><br /></p>
+                </label> 
+               
+                <label class="right"><ons-input name="algae" type="radio" input-id="no_algae"></ons-input></label>               
+    
+            </ons-list-item>
+            <ons-list-item  modifier="longdivider"> 
+                <label class="left img-wrapper" for="little_algae"><img src="img/.jpg" class="obs-image"></label> 
+                <label for="little_algae" class="center label-wrapper">
+                        <p style="pointer-events: none;">  Little Algae </p> 
+                        <p style="pointer-events: none;"> Eiffel Tower is the symbol of Paris and named by Gustave Eiffel <br /><br /></p>
+
+                </label> 
+                <label class="right"><ons-input name="algae" type="radio" input-id="little_algae"></ons-input></label>               
+            </ons-list-item>
+            <ons-list-item  modifier="longdivider"> 
+                    <label for="plenty_algae" class="left img-wrapper"><img src="img/.jpg" class="obs-image"></label> 
+                <label for="plenty_algae" class="center label-wrapper" >
+                        <p style="pointer-events: none;">  Plenty of green Algae </p> 
+                        <p style="pointer-events: none;"> Eiffel Tower is the symbol of Paris and named by Gustave Eiffel <br /><br /></p>
+
+                </label> 
+                <label class="right"><ons-input name="algae" type="radio" input-id="plenty_algae"></ons-input></label> 
+            </ons-list-item>
+            <ons-list-item  modifier="longdivider"> 
+            <label for="rich_algae" class="left img-wrapper"><img src="img/.jpg" class="obs-image"></label>
+            <label for="rich_algae" class="center label-wrapper">
+                        <p style="pointer-events: none;">  Very rich in algae </p>
+                        <p style="pointer-events: none;"> Eiffel Tower is the symbol of Paris and named by Gustave Eiffel<br /><br /></p>
+
+            </label> 
+            <label class="right"><ons-input name="algae" type="radio" input-id="rich_algae"></ons-input></label>            
+            </ons-list-item>
+        </ons-list>    
+    </div>
+    <br />
+    <ons-button style="position:relative;margin-bottom:2%;" modifier="large" ng-click="page.test()">Continue</ons-button>
+</ons-page>

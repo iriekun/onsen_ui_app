@@ -1,0 +1,27 @@
+<ons-page ng-controller="RegisterController as page" id="register.html">
+    <ons-toolbar>
+        <div class="center">Sign Up</div>
+        <div class="left">
+            <ons-back-button>Back</ons-back-button>
+        </div>
+    </ons-toolbar>
+ <div class="login-form"> 
+        <input id="username" type="text" class="myInput" placeholder="Username" float ng-model="page.username" />
+        <input id="email" type="text" class="myInput" placeholder="Email" float ng-model="page.email" />
+        <input id="password" type="password" class="myInput" type="password" placeholder="Password" float ng-model="page.password" />
+        <br /><br />
+        <ons-button modifier="large" ng-click="page.register()">Register</ons-button>
+        <br /><br />
+        <p style="width: 100%; display: table;color:rgba(18,114,224,0.77); font-size:14px">
+            <span style="width: 40%; display: table-cell; border-bottom: 1px solid;"></span>
+            <span style="width: 20%; display: table-cell;">OR</span>
+            <span style="width: 40%; display: table-cell; border-bottom: 1px solid;"></span>
+        </p>
+        <ons-button modifier="quiet" class="forgot-password" ng-click="">
+            <span><ons-icon icon="ion-social-facebook" size="20px"></ons-icon></span>
+            <span>Log In With Facebook</span>        
+        </ons-button>
+    </div>
+
+</ons-page>
+ 

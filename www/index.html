@@ -1,0 +1,53 @@
+<!DOCTYPE HTML>
+<html ng-app="my-app">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="Content-Security-Policy" content="default-src * data:; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
+    <script src="components/loader.js"></script>
+    <script src="lib/angular/angular.min.js"></script>
+    <script src="lib/onsenui/js/onsenui.min.js"></script>
+    <script src="lib/onsenui/js/angular-onsenui.min.js"></script>
+    <link rel="stylesheet" href="components/loader.css">
+    <link rel="stylesheet" href="lib/onsenui/css/onsenui.css">
+    <link rel="stylesheet" href="lib/onsenui/css/onsen-css-components-blue-basic-theme.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/scripts.js"></script>
+    <script src="js/plugin.js"></script>
+    
+    <!-- Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/3.5.3/firebase.js"></script>
+    <script src="js/firebase.js"></script>
+    <script>
+        ons.ready(function()
+        {
+            console.log("Onsen UI is ready!");
+        });
+    </script>
+       
+</head>
+
+<body>
+    <!-- naviation from login to main page-->
+    <ons-navigator var="myNav" page="login.html"> </ons-navigator>
+    <!-- login.html -->
+    <ons-template id="tab.html" ng-controller="mainController as page">
+        <ons-tabbar>
+            <!-- home tab -->
+            <ons-tab page="navigator.html"  label="Home" icon="ion-home" active="true">
+               <!-- <ons-icon icon="ion-home" size="20px"></ons-icon>-->
+            </ons-tab>
+            <!-- Leaderboard tab -->
+            <ons-tab page="tab2.html" label="Achievement" icon="ion-trophy" >
+              <!-- <ons-icon icon="ion-trophy" size="20px"></ons-icon>  --> 
+            </ons-tab>
+            <!-- Setting tab -->
+            <ons-tab page="myNavTab3.html" label="Settings" icon="ion-gear-a">
+              <!--  <ons-icon icon="ion-gear-a" size="20px"></ons-icon> --> 
+            </ons-tab>
+        </ons-tabbar>
+    </ons-template>
+</body>
+
+</html>
